@@ -25,4 +25,4 @@
 ## Collisions To Handle:
 	- Laser hits alien
 	- Laser hits player
-	-Alien reaches bottom of screen
+	- Alien reaches bottom of screen
