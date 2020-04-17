@@ -1,5 +1,5 @@
 # PA9_SpaceInvaders
-##Objects Needed (Visual: shape, actions, and movement):
+## Objects Needed (Visual: shape, actions, and movement):
 	- Aliens (create a generic class, then use inheritance for bellow)
 		○ Types
 			§ Octopus
@@ -20,8 +20,8 @@
 	- HUD
 		○ Score counter
 		○ Lives
-	
-##Collisions To Handle:
+
+## Collisions To Handle:
 	- Laser hits alien
 	- Laser hits player
-  -Alien reaches bottom of screen
+	-Alien reaches bottom of screen
