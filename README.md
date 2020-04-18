@@ -24,7 +24,7 @@ For example, a commit should never contain 2 function definitions. Define one fu
 then commit it. Define the second function, make sure it works, then commit it.
 
 Try to be descriptive with your commit messages. "fixed typo" is fine, but try to be a bit more verbose for other
-things. (This article)[https://chris.beams.io/posts/git-commit/] is a good reference, but it's a bit overkill for our purposes.
+things. [This article](https://chris.beams.io/posts/git-commit/) is a good reference, but it's a bit overkill for our purposes.
 
 ### Style Guide
 If this portion isn't followed, that's fine. I'll just end up changing it...
