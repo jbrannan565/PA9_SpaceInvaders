@@ -42,7 +42,7 @@ void foo() {
 // codes
 }
 ```
-Try not to make your comments or code lines so long that you have to scroll to read it. It's not fun for you or for anyone else.
+Try not to make your comments or code lines so long that you have to scroll right to read it. It's not fun for you or for anyone else.
 
 Use camel case for variables and upper camel case for objects/classes.
 ```
