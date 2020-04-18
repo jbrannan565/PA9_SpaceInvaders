@@ -25,4 +25,5 @@
 ## Collisions To Handle:
 	- Laser hits alien
 	- Laser hits player
+	- Laser hits bunker
 	- Alien reaches bottom of screen
