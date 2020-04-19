@@ -17,7 +17,12 @@ void HUD::increaseScore(int amount) {
 	score += amount;
 }
 
+/*
+Name: decrementLives
+Description: Decreases lives by 1.
+*/
 void HUD::decrementLives() {
+	lives--;
 }
 
 void HUD::drawLivesSprites(sf::RenderWindow& window) {
