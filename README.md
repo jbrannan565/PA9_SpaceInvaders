@@ -24,7 +24,7 @@ For example, a commit should never contain 2 function definitions. Define one fu
 then commit it. Define the second function, make sure it works, then commit it.
 
 Try to be descriptive with your commit messages. "fixed typo" is fine, but try to be a bit more verbose for other
-things. (This article)[https://chris.beams.io/posts/git-commit/] is a good reference, but it's a bit overkill for our purposes.
+things. [This article](https://chris.beams.io/posts/git-commit/) is a good reference, but it's a bit overkill for our purposes.
 
 ### Style Guide
 If this portion isn't followed, that's fine. I'll just end up changing it...
@@ -42,7 +42,7 @@ void foo() {
 // codes
 }
 ```
-Try not to make your comments or code lines so long that you have to scroll to read it. It's not fun for you or for anyone else.
+Try not to make your comments or code lines so long that you have to scroll right to read it. It's not fun for you or for anyone else.
 
 Use camel case for variables and upper camel case for objects/classes.
 ```
