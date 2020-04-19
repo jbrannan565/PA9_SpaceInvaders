@@ -6,6 +6,7 @@ class Bunker
 private:
 	sf::Texture bTexture;
 	sf::Sprite bSprite;
+	int hits;
 
 public:
 	Bunker(float x, float y);
