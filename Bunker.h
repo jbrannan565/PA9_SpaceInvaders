@@ -8,7 +8,7 @@ private:
 	sf::Sprite bSprite;
 
 public:
-	Bunker();
+	Bunker(float x, float y);
 
 	void drawBunker(sf::RenderWindow& window);
 
