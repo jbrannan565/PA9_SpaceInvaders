@@ -1,6 +1,11 @@
 #include "Bunker.h"
 #include <iostream>
 
+/*
+Name: Bunker construcor
+Description: Creates a bunker with the bunker1.png texture, and places the bunker at (x,y).
+	Also init hits to 0.
+*/
 Bunker::Bunker(float x, float y) {
 	if (!bTexture.loadFromFile("bunker1.png"))
 		std::cerr << "Error in Blayer constructor" << std::endl;
@@ -10,13 +15,21 @@ Bunker::Bunker(float x, float y) {
 	hits = 0;
 }
 
+/*
+Name: drawBunker
+Description: draws the bunker sprite to window.
+*/
 void Bunker::drawBunker(sf::RenderWindow& window) {
 	window.draw(bSprite);
 }
 
+/*
+Name: takeHit
+Description: Increments hits and changes the sprite of the bunker depending on the number of hits the
+bunker has taken.
+*/
 void Bunker::takeHit() {
 	hits++;
-	std::cout << "Hits: " << hits << std::endl;
 	switch (hits)
 	{
 	case 1:
@@ -49,7 +62,10 @@ void Bunker::takeHit() {
 	}
 }
 
-
+/*
+Name: getPosition
+Description: returns a vector of the bunker's current position
+*/
 const sf::Vector2f& Bunker::getPosition() {
 	return bSprite.getPosition();;
 }
