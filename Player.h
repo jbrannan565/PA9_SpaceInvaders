@@ -20,4 +20,22 @@ public:
 	void drawPlayer(sf::RenderWindow& window) {
 		window.draw(pSprite);
 	}
+
+	void movePlayer(char direction, float moveSpeed) {
+		switch (direction)
+		{
+			case 'l':
+				pSprite.move(-moveSpeed, 0);
+				break;
+			case 'r':
+				pSprite.move(moveSpeed, 0);
+				break;
+			default:
+				break;
+		}
+	}
+
+	const sf::Vector2f& getPosition() {
+		return pSprite.getPosition();
+	}
 };
