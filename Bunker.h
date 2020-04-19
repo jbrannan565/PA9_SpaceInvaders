@@ -4,8 +4,8 @@
 class Bunker
 {
 private:
-	sf::Texture pTexture;
-	sf::Sprite pSprite;
+	sf::Texture bTexture;
+	sf::Sprite bSprite;
 
 public:
 	Bunker();
