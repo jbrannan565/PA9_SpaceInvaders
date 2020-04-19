@@ -16,4 +16,8 @@ public:
 		pSprite.setTexture(pTexture);
 		pSprite.setPosition(250-25, 700);
 	}
+
+	void drawPlayer(sf::RenderWindow& window) {
+		window.draw(pSprite);
+	}
 };
