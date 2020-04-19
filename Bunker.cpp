@@ -48,3 +48,8 @@ void Bunker::takeHit() {
 		break;
 	}
 }
+
+
+const sf::Vector2f& Bunker::getPosition() {
+	return bSprite.getPosition();
+}
