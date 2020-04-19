@@ -9,10 +9,6 @@ Bunker::Bunker(float x, float y) {
 }
 
 void Bunker::drawBunker(sf::RenderWindow& window) {
+	window.draw(bSprite);
 }
-
-void Bunker::takeHit() {
-}
-
-
 
