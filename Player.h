@@ -10,32 +10,11 @@ private:
 	sf::Sprite pSprite;
 
 public:
-	Player() {
-		if (!pTexture.loadFromFile("player.png"))
-			std::cerr << "Error in Player constructor" << std::endl;
-		pSprite.setTexture(pTexture);
-		pSprite.setPosition(250-25, 700);
-	}
+	Player();
 
-	void drawPlayer(sf::RenderWindow& window) {
-		window.draw(pSprite);
-	}
+	void drawPlayer(sf::RenderWindow& window);
 
-	void movePlayer(char direction, float moveSpeed) {
-		switch (direction)
-		{
-			case 'l':
-				pSprite.move(-moveSpeed, 0);
-				break;
-			case 'r':
-				pSprite.move(moveSpeed, 0);
-				break;
-			default:
-				break;
-		}
-	}
+	void movePlayer(char direction, float moveSpeed);
 
-	const sf::Vector2f& getPosition() {
-		return pSprite.getPosition();
-	}
+	const sf::Vector2f& getPosition();
 };
