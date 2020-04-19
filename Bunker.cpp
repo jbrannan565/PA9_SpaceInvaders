@@ -16,6 +16,7 @@ void Bunker::drawBunker(sf::RenderWindow& window) {
 
 void Bunker::takeHit() {
 	hits++;
+	std::cout << "Hits: " << hits << std::endl;
 	switch (hits)
 	{
 	case 1:
@@ -32,10 +33,17 @@ void Bunker::takeHit() {
 		if (!bTexture.loadFromFile("bunker4.png"))
 			std::cerr << "Error loading bunker image";
 		bSprite.setTexture(bTexture);
+		break;
 	case 4:
 		if (!bTexture.loadFromFile("bunker5.png"))
 			std::cerr << "Error loading bunker image";
 		bSprite.setTexture(bTexture);
+		break;
+	case 5:
+		if (!bTexture.loadFromFile("bunker6.png"))
+			std::cerr << "Error loading bunker image";
+		bSprite.setTexture(bTexture);
+		break;
 	default:
 		break;
 	}
