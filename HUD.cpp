@@ -9,7 +9,12 @@ HUD::HUD() {
 	score = 0;
 }
 
+/*
+Name: increaseScore
+Description: Increments score by amount.
+*/
 void HUD::increaseScore(int amount) {
+	score += amount;
 }
 
 void HUD::decrementLives() {
