@@ -60,4 +60,19 @@ void HUD::drawLivesSprites(sf::RenderWindow& window) {
 }
 
 void HUD::drawScore(sf::RenderWindow& window) {
+	sf::Text scoreText;
+	sf::Font font;
+
+	if (!font.loadFromFile("arial.ttf"))
+		std::cerr << "Error loading arial font in HUD" << std::endl;
+	// Draw lives as a number
+	scoreText.setFont(font);
+	scoreText.setString("Score: " + std::to_string(score));
+	scoreText.setPosition(25, 50);
+	scoreText.setCharacterSize(20);
+	scoreText.setFillColor(sf::Color::White);
+
+	window.draw(scoreText);
+
+
 }
