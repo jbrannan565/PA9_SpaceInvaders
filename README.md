@@ -1,5 +1,5 @@
 # PA9_SpaceInvaders
-[Wikipedia page of Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
+[Wikipedia Page of Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
 ## Directions for Development
 Until we begin combining our work we will each need to create our own Main.cpp file to hold the main() function.
 This will ease the initial debugging process and allow us to work autonomously.
@@ -97,14 +97,14 @@ while (spaghetti > pizza - 50)
 			§ Move zig-zaggy across the screen, and downward slowly
 			§ Fire Laser
 				□ Once the aliens reach a certain y position they start trying to kill cannon man:(
-	- Player (cannon guy) -- Jared
+	- Player (cannon guy) -- Jared -- DONE
 		○ Move left and right
 		○ Fire Laser
 	- Laser - Cannon ball/whatever the shooted thing is. -- Christian
 		○ Move straight from firing point
-	- Defense Bunkers -- Whoever gets to it first
+	- Defense Bunkers -- Jared -- DONE
 		○ Stationary, doesn’t need much
-	- HUD -- Whoever gets to it first
+	- HUD -- Jared -- DONE
 		○ Score counter
 		○ Lives
 
