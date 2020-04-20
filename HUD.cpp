@@ -77,6 +77,4 @@ void HUD::drawScore(sf::RenderWindow& window) {
 	scoreText.setFillColor(sf::Color::White);
 
 	window.draw(scoreText);
-
-
 }
