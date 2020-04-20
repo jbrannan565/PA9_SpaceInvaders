@@ -59,6 +59,10 @@ void HUD::drawLivesSprites(sf::RenderWindow& window) {
 	}
 }
 
+/*
+Name: drawScore
+Description: Draws the current score to the top of the window.
+*/
 void HUD::drawScore(sf::RenderWindow& window) {
 	sf::Text scoreText;
 	sf::Font font;
