@@ -27,7 +27,7 @@ things. [This article](https://chris.beams.io/posts/git-commit/) is a good refer
 
 ### Style Guide
 If this portion isn't followed, that's fine. I'll just end up changing it...
-Style is important, because it makes reading the code a lot easier if everyone's code looks vaguely similar.
+Using similar style will increase the readability of the code for everyone.
 
 Try to avoid typos.
 
