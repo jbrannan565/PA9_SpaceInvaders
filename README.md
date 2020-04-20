@@ -12,7 +12,7 @@ git help
 ```
 
 ### Using This Repo
-To use the repo you will need to clone it from here, then from visual studio click "File->New->Project From Existing Code" and run through the wizard, setting the project directory to wherever you placed the git repo. Add a Main.cpp file and start your project from there
+To use the repo you will need to clone it from here, then create a BLANK C++ project in visual studio, then configure the project to use SFML. Add a Main.cpp file and start your project from there
 
 You may need to add our source files to your project. To do so, open your project, click "Project" in the upper left-hand
 corner, then "Add Existing Item." Navigate to your source files for the repo, highlight all of them and click "Add"
