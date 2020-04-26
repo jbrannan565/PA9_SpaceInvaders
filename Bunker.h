@@ -16,5 +16,6 @@ public:
 	void takeHit();
 
 	const sf::Vector2f& getPosition();
+	sf::Sprite getSprite();
 };
 

@@ -29,6 +29,7 @@ Description: Increments hits and changes the sprite of the bunker depending on t
 bunker has taken.
 */
 void Bunker::takeHit() {
+	sf::Vector2f curPos;
 	hits++;
 	switch (hits)
 	{
@@ -56,6 +57,8 @@ void Bunker::takeHit() {
 		if (!bTexture.loadFromFile("bunker6.png"))
 			std::cerr << "Error loading bunker image";
 		bSprite.setTexture(bTexture);
+		curPos = bSprite.getPosition();
+		bSprite.setPosition(curPos.x, curPos.y + 10000);
 		break;
 	default:
 		break;
@@ -68,4 +71,8 @@ Description: returns a vector of the bunker's current position
 */
 const sf::Vector2f& Bunker::getPosition() {
 	return bSprite.getPosition();;
+}
+	
+sf::Sprite Bunker::getSprite() {
+	return bSprite;
 }

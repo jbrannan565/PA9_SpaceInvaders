@@ -10,6 +10,10 @@ HUD::HUD() {
 	score = 0;
 }
 
+int HUD::getLives() {
+	return lives;
+}
+
 /*
 Name: increaseScore
 Description: Increments score by amount.
