@@ -18,14 +18,14 @@ using namespace std;
 
 int main()
 {
+	/*
 	Tests tester;
-
 	tester.playerMoves();
 	tester.testAlienShot();
 	tester.testPlayerShot();
 	tester.testBunkerShot();
 	tester.testBottomAlienColision();
-	/*
+	*/
     sf::RenderWindow window(sf::VideoMode(800, 800), "Space Invaders");
 
 	bool endGame = false;
@@ -220,9 +220,5 @@ int main()
         window.display();
     }
 
-	// Draw endgame screen
-	cout << "END" << endl;
-
-	*/
     return 0;
 }
