@@ -3,8 +3,8 @@
 
 /*
 Name: Player constructor
-Description: loads player.png into a sprite for the player, then puts that player
-at (250-25, 700).
+Description: loads player.png into a sprite for the player and creates a bitmap for collisions, 
+then puts that player at (250-25, 700).
 */
 Player::Player() {
 	if (!pTexture.loadFromFile("player.png"))
@@ -72,12 +72,18 @@ Description: Returns the vector of laser pointers
 list<Laser*> Player::getLasers() {
 	return lasers;
 }
-
+/*
+Name: getSprite
+Description: returns the sprite of the player
+*/
 const sf::Sprite& Player::getSprite() {
 	return pSprite;
 }
 
-
+/*
+Name: setPosition	
+Description: sets the player sprite position based on x and y
+*/
 void Player::setPosition(int x, int y) {
 	pSprite.setPosition(sf::Vector2f(x, y));
 }

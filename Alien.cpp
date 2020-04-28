@@ -45,10 +45,19 @@ sf::Vector2f Alien::getPosition() {
 }
 
 
+/*
+Name: getSprite
+Description: returns the sprite of the Alien
+*/
 const sf::Sprite& Alien::getSprite() {
 	return pSprite;
 }
 
+/*
+Name: remove
+Description: moves the position of the alien way outside the frame of the playing
+window.
+*/
 void Alien::remove() {
 	sf::Vector2f currPos = pSprite.getPosition();
 	pSprite.setPosition(currPos.x,currPos.y + 10000);
@@ -72,5 +81,4 @@ Description: Returns the vector of laser pointers
 list<Laser*> Alien::getLasers() {
 	return lasers;
 }
-
 

@@ -9,16 +9,9 @@ private:
 
 public:
 	HUD();
-
 	void increaseScore(int amount);
-
 	int getLives();
-
 	void decrementLives();
-
 	void drawLivesSprites(sf::RenderWindow& window);
-
-	void drawScore(sf::RenderWindow& window);
-
 };
 

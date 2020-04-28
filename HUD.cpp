@@ -9,7 +9,10 @@ HUD::HUD() {
 	lives = 3;
 	score = 0;
 }
-
+/*
+Name: getLives
+Description: returns the number of lives the player has remaining
+*/
 int HUD::getLives() {
 	return lives;
 }
@@ -61,24 +64,4 @@ void HUD::drawLivesSprites(sf::RenderWindow& window) {
 		sprite.setPosition((i + 1) * 100 - 50, 750);
 		window.draw(sprite);
 	}
-}
-
-/*
-Name: drawScore
-Description: Draws the current score to the top of the window.
-*/
-void HUD::drawScore(sf::RenderWindow& window) {
-	sf::Text scoreText;
-	sf::Font font;
-
-	if (!font.loadFromFile("arial.ttf"))
-		std::cerr << "Error loading arial font in HUD" << std::endl;
-	// Draw lives as a number
-	scoreText.setFont(font);
-	scoreText.setString("Score: " + std::to_string(score));
-	scoreText.setPosition(25, 50);
-	scoreText.setCharacterSize(20);
-	scoreText.setFillColor(sf::Color::White);
-
-	window.draw(scoreText);
 }

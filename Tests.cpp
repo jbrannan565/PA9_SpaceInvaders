@@ -6,12 +6,17 @@
 #include "Bunker.h"
 	
 
+/*
+Name: Tests constructor
+Description: Initializes collisionX  and collisionY  to 100.
+*/
 Tests::Tests() {
 	collisionX = 100;
 	collisionY = 100;
 }
 
 /*
+Name: testBottomAlienColision   
 Description: Ensure that the aliens can colide with the bottom of the screen
 */
 void Tests::testBottomAlienColision() {
@@ -51,6 +56,7 @@ void Tests::testBottomAlienColision() {
     }
 }
 /*
+Name: testBottomAlienShot
 Description: Ensure that the aliens can be hit with a laser
 */
 void Tests::testAlienShot() {
@@ -83,6 +89,7 @@ void Tests::testAlienShot() {
     }
 }
 /*
+Name: testPlayerShot 
 Description: Ensure that the player can be hit with a laser
 */
 void Tests::testPlayerShot() {
@@ -115,6 +122,7 @@ void Tests::testPlayerShot() {
     }
 }
 /*
+Name: testBunkerShot
 Description: Ensure that the bunker can be hit with a laser 
 */
 void Tests::testBunkerShot() {
@@ -147,6 +155,7 @@ void Tests::testBunkerShot() {
     }
 }
 /*
+Name: playerMoves
 Description: Ensure that the player can move with keyboard input
 */
 void Tests::playerMoves() {

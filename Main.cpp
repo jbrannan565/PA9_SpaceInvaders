@@ -28,8 +28,10 @@ int main()
 	*/
     sf::RenderWindow window(sf::VideoMode(800, 800), "Space Invaders");
 
+	// Win condition variables
 	bool endGame = false;
 	bool win = false;
+	// sprite initialization 
     HUD hud;
     Player player;
     Bunker bunker1(800.0/3 - 190, 575);
@@ -38,10 +40,12 @@ int main()
 
 	int deadAliens = 0;
 
+	// Alien init
     Alien* alienArray[NUMALIENS] = { new Crab(200,100),new Crab(300,100), new Crab(400,100), 
 		new Squid(200,200), new Squid(300,200), new Squid(400,200),
 		new Octopus(200,300), new Octopus(300,300), new Octopus(400,300)};
 
+	// Bottom Edge init
 	sf::Sprite bottom;
 	sf::Texture bottomTexture;
 	if (!bottomTexture.loadFromFile("bottom.png"))
@@ -212,7 +216,6 @@ int main()
 
         // Draw HUD
         hud.drawLivesSprites(window);
-        hud.drawScore(window);
 
 		// Draw Bottom
 		window.draw(bottom);

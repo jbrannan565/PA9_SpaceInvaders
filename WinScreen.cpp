@@ -1,6 +1,10 @@
 #include "WinScreen.h"
 #include <iostream>
 
+/*
+Name: drawWinScreen	
+Description: Replaces the window with a magenta background, and notifies the player that they have won.
+*/
 void drawWinScreen(sf::RenderWindow& window) {
 	sf::Texture texture;
 	sf::Sprite sprite;
@@ -29,6 +33,10 @@ void drawWinScreen(sf::RenderWindow& window) {
 	window.display();
 }
 
+/*
+Name: drawLossScreen	
+Description: Replaces the window with a read background, and notifies the player that they have lost.
+*/
 void drawLossScreen(sf::RenderWindow& window) {
 	sf::Texture texture;
 	sf::Sprite sprite;

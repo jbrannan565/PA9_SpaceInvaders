@@ -73,6 +73,10 @@ const sf::Vector2f& Bunker::getPosition() {
 	return bSprite.getPosition();;
 }
 	
+/*
+Name: getSprite
+Description: returns the Bunker's sprite
+*/
 sf::Sprite Bunker::getSprite() {
 	return bSprite;
 }
